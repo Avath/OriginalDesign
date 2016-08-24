@@ -3,7 +3,9 @@ int x=0;
 	int x2=200;
 	int y2=200;
 int w=x2+y2;
-void color=color(0,32,32);
+
+ int r=color(0,32,32);
+ double ran=Math.random();
 void setup()
 {
   size(400,400);
@@ -16,7 +18,7 @@ void draw()
 	x=x+30;
 	y=y+30;
 
-	background(color);
+	background(r);
    fill(y2,x2,w);
    ellipse(x2,y2,x,y); 
 
@@ -82,12 +84,7 @@ if(mousePressed==false){
 w=x2+y2;
 
 }
-if(color==color(0,32,32)){
-	color=color(225,0,0);
-}
-if(color==color(225,0,0)){
-	color=color(0,32,32);
-}
+
 }
 
 
