@@ -18,8 +18,8 @@ void draw()
 { 
 
 if(gameover==false)	{
-	x=x+5;
-	y=y+5;
+	x=x+7 ;
+	y=y+7;
  
 	background(r);
    fill(y2,x2,w);
@@ -96,7 +96,7 @@ if(mousePressed==true&&x>90&&y>90/*&&cursor()!=color(0,32,32)*/){
 
 }
 else if(mousePressed==true&&x<89&&y<89){
-	s-=20;
+	s-=100;
 }
 else{
 	s-=1;
