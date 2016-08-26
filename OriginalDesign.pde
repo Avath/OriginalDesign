@@ -96,7 +96,7 @@ if(mousePressed==true&&x>90&&y>90/*&&cursor()!=color(0,32,32)*/){
 
 }
 else if(mousePressed==true&&x<89&&y<89){
-	s-=100;
+	s-=50;
 }
 else{
 	s-=1;
