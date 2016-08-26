@@ -7,17 +7,19 @@ int w=x2+y2;
  int r=color(0,32,32);
  int s=0;
  boolean qwer;
+ boolean gameover=false;
 void setup()
 {
   size(400,400);
 
 }
+
 void draw()
 { 
 
-	
-	x=x+10;
-	y=y+10;
+if(gameover==false)	{
+	x=x+4;
+	y=y+4;
  
 	background(r);
    fill(y2,x2,w);
@@ -88,21 +90,25 @@ if(mousePressed==false){
 w=x2+y2;
 
 }
-if(mousePressed==true&&x>50&&y>50/*&&cursor()!=color(0,32,32)*/){
+if(mousePressed==true&&x>90&&y>90/*&&cursor()!=color(0,32,32)*/){
 
-	s+=10;
+	s+=40;
 
+}
+else if(mousePressed==true&&x<89&&y<89){
+	s-=20;
 }
 else{
 	s-=1;
 }
 
 
-if(s<=10){
+if(s<=-200){
 
 	background(225,0,0);
+	gameover=true;
 }
-
+}
 }
 
 
