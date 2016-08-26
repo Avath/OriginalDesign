@@ -5,7 +5,7 @@ int x=0;
 int w=x2+y2;
 
  int r=color(0,32,32);
- int s=0;
+ int s=200;
  boolean qwer;
  boolean gameover=false;
 void setup()
@@ -18,8 +18,8 @@ void draw()
 { 
 
 if(gameover==false)	{
-	x=x+4;
-	y=y+4;
+	x=x+5;
+	y=y+5;
  
 	background(r);
    fill(y2,x2,w);
@@ -103,12 +103,12 @@ else{
 }
 
 
-if(s<=-200){
+if(s<=0){
 
 	background(225,0,0);
 	gameover=true;
 }
-}
+} 
 }
 
 
